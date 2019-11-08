@@ -9,7 +9,7 @@ use LegoCue\Framework\Kernel;
 
 class Application extends SymfonyApplication
 {
-    public function run( InputInterface $input = null, OutputInterface $output = null )
+    public function terminate( InputInterface $input = null, OutputInterface $output = null )
     {
         $kernel = new Kernel();
         $commandLoader = new ContainerCommandLoader(
@@ -17,6 +17,6 @@ class Application extends SymfonyApplication
             $kernel->getMaps()
         );
         $this->setCommandLoader( $commandLoader );
-        parent::run( $input, $output );
+        $this->run( $input, $output );
     }
 }
