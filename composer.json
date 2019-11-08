@@ -1,0 +1,23 @@
+{
+    "name": "legocue/framework",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SolaTyolo",
+            "email": "solat.yolo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "7.2",
+        "symfony/console": "4.3.6",
+        "symfony/dependency-injection": "4.3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "LegoCue\\Framework\\": "src/"
+        }
+    }
+}
